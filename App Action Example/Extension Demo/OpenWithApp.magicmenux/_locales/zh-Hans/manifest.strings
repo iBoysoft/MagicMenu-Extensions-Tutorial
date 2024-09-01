@@ -1,0 +1,5 @@
+"Open with App" = "用App打开";
+"Quickly open the target file or folder with specific app." = "快速用指定App打开目标文件或文件夹。";
+"Support you to launch specific app directly and use it to open a file or folder instantly rather than take more time to launch it from Finder." = "支持你直接启动指定App，以便即刻打开文件或文件夹，无需从访达中花更多时间启动。";
+"App Bundle Identifier" = "App包标识符";
+"Enter the app bundle identifier you want to open" = "输入你想要打开的App包标识符";

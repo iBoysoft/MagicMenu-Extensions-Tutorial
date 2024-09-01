@@ -1,0 +1,54 @@
+{
+    "name": "Open with App",
+    "subname": "Quickly open the target file or folder with specific app.",
+    "icon": "icon.png",
+    "identifier": "com.iboysoft-example.openWithApp",
+    "description": "Support you to launch specific app directly and use it to open a file or folder instantly rather than take more time to launch it from Finder.",
+    "os version": "10.13",
+    "app version": "4",
+    "version": "1",
+    "developer":"iBoysoft",
+    "copyright": "Copyright \u00a9 2024 iBoysoft. All rights reserved.",
+    "categories":[
+        "Shortcut"
+    ],
+    "actions": {
+        "apps": [
+            {
+                "name": "App",
+                "full name": "Open with App",
+                "description": "Support you to launch specific app directly and use it to open a file or folder instantly rather than take more time to launch it from Finder.",
+                "icon": "icon.png",
+                "identifier": "com.iboysoft-example.openWithApp.open",
+                "rule": {
+                    "type": "basic",
+                    "values": [
+                        "7"
+                    ]
+                },
+                "run as root": 0,
+                "async": 0,
+                "default group id": "19B75651-7B42-4265-8235-BB5D2949B972",
+                "app": {
+                    "exec file": "OpenWithApp.app/Contents/MacOS/OpenWithApp",
+                    "params": [
+                        "-appid",
+                        "{magicmenu actions com.iboysoft-example.openWithApp.open options com.iboysoft-example.openWithApp.open.app-identifier}",
+                        "-urls",
+                        "{magicmenu selectedURLs}"
+                    ]
+                },
+                "options": [
+                    {
+                        "identifier": "com.iboysoft-example.openWithApp.open.app-identifier",
+                        "type": "text",
+                        "name": "App Bundle Identifier",
+                        "description": "Enter the app bundle identifier you want to open",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    }
+}
+

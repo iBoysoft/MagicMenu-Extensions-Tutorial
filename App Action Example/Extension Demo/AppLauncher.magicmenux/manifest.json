@@ -1,0 +1,74 @@
+{
+    "name": "App Launcher",
+    "subname": "Quickly launch the target app.",
+    "icon": "icon.png",
+    "identifier": "com.iboysoft-example.appLauncher",
+    "description": "Support you to launch specific app directly.",
+    "os version": "10.13",
+    "app version": "4",
+    "version": "1",
+    "developer":"iBoysoft",
+    "copyright": "Copyright \u00a9 2024 iBoysoft. All rights reserved.",
+    "categories":[
+        "Shortcut"
+    ],
+    "actions": {
+        "apps": [
+            {
+                "name": "App Launcher",
+                "full name": "App Launcher",
+                "description": "Support you to launch specific app directly.",
+                "icon": "icon.png",
+                "identifier": "com.iboysoft-example.appLauncher.launch",
+                "rule": {
+                    "type": "exec",
+                    "values": [
+                    ]
+                },
+                "run as root": 0,
+                "async": 0,
+                "app": {
+                    "exec file": "AppLauncher.app/Contents/MacOS/AppLauncher",
+                    "params": [
+                        "{magicmenu selectedURLs 0}",
+                        "-new",
+                        "{magicmenu actions com.iboysoft-example.appLauncher.launch options com.iboysoft-example.appLauncher.launch.new}",
+                    ]
+                },
+                "options": [
+                    {
+                        "identifier": "com.iboysoft-example.appLauncher.launch.new",
+                        "type": "checkbox",
+                        "name": "New Instance",
+                        "description": "Launch with a new instance",
+                        "default values": ["true"]
+                    }
+                ]
+            },
+            {
+                "name": "App Launcher (Administrator)",
+                "full name": "App Launcher (Administrator)",
+                "description": "Support you to launch specific app directly with administrator privilege.",
+                "icon": "icon-root.png",
+                "identifier": "com.iboysoft-example.appLauncher.launch.root",
+                "rule": {
+                    "type": "exec",
+                    "values": [
+                    ]
+                },
+                "run as root": 1,
+                "async": 0,
+                "app": {
+                    "exec file": "AppLauncher.app/Contents/MacOS/AppLauncher",
+                    "params": [
+                        "{magicmenu selectedURLs 0}",
+                        "-new",
+                        "{magicmenu actions com.iboysoft-example.appLauncher.launch options com.iboysoft-example.appLauncher.launch.new}",
+                        "-root",
+                    ]
+                }
+            }
+        ]
+    }
+}
+

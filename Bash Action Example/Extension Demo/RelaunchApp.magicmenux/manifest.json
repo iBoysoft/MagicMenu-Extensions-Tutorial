@@ -1,6 +1,6 @@
 {
     "name": "Relaunch App",
-    "subname":"Kill and relaunch your app",
+    "subname":"Kill and relaunch your app.",
     "icon": "icon.png",
     "identifier": "com.iboysoft-example.relaunchApp",
     "description": "The shortcut for relaunching apps",
@@ -17,7 +17,7 @@
             {
                 "name": "Relaunch App",
                 "full name": "Relaunch App",
-                "description": "Kill and relaunch your app",
+                "description": "Kill and relaunch your app.",
                 "icon": "icon.png",
                 "identifier": "com.iboysoft-example.relaunchApp.relaunch",
                 "rule": {
@@ -56,7 +56,7 @@
             {
                 "name": "Relaunch App (Administrator)",
                 "full name": "Relaunch App (Administrator)",
-                "description": "Kill and relaunch your app with administrator privilege",
+                "description": "Kill and relaunch your app with administrator privilege.",
                 "icon": "icon-root.png",
                 "identifier": "com.iboysoft-example.relaunchApp.relaunch.root",
                 "rule": {
