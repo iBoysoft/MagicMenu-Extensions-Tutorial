@@ -1,0 +1,9 @@
+"Relaunch App" = "重启App";
+"Kill and relaunch your app" = "杀掉然后重启App";
+"The shortcut for relaunching apps" = "重启App的捷径";
+"App Name" = "App名称";
+"Enter the app name you want to relaunch" = "输入要重新启动的App名称";
+"Relaunch App (Administrator)" = "重启App (管理员)";
+"Kill and relaunch your app with administrator privilege" = "使用管理员权限杀掉然后重启App";
+"App URL" = "App路径";
+"Select the app url you want to relaunch" = "选择你想要重启的App的路径";

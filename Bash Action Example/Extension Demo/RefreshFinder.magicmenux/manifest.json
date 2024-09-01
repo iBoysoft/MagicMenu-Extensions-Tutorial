@@ -1,0 +1,41 @@
+{
+    "name": "Refresh Finder",
+    "subname":"Refresh like Windows.",
+    "icon": "icon.png",
+    "identifier": "com.iboysoft-example.refreshFinder",
+    "description": "The shortcut for refreshing in Mac (like Windows)",
+    "os version": "10.13",
+    "app version": "4",
+    "version": "1",
+    "developer":"iBoysoft",
+    "copyright": "Copyright \u00a9 2024 iBoysoft. All rights reserved.",
+    "categories":[
+        "Shortcut"
+    ],
+    "actions": {
+        "shells": [
+            {
+                "name": "Refresh",
+                "full name": "Refresh",
+                "description": "The shortcut for refreshing in Mac (like Windows)",
+                "icon": "icon.png",
+                "identifier": "com.iboysoft-example.refreshFinder.refresh",
+                "rule": {
+                    "type": "basic",
+                    "values": [
+                        "1"
+                    ]
+                },
+                "run as root": 0,
+                "async": 1,
+                "shell": {
+                    "shellscript file": "RefreshFinder.sh",
+                    "params": [
+                    ],
+                    "interpreter": "bash"
+                }
+            }
+        ]
+    }
+}
+

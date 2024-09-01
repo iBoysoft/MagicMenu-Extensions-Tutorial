@@ -1,0 +1,98 @@
+{
+    "name": "Relaunch App",
+    "subname":"Kill and relaunch your app",
+    "icon": "icon.png",
+    "identifier": "com.iboysoft-example.relaunchApp",
+    "description": "The shortcut for relaunching apps",
+    "os version": "10.13",
+    "app version": "4",
+    "version": "1",
+    "developer":"iBoysoft",
+    "copyright": "Copyright \u00a9 2024 iBoysoft. All rights reserved.",
+    "categories":[
+        "Shortcut"
+    ],
+    "actions": {
+        "shells": [
+            {
+                "name": "Relaunch App",
+                "full name": "Relaunch App",
+                "description": "Kill and relaunch your app",
+                "icon": "icon.png",
+                "identifier": "com.iboysoft-example.relaunchApp.relaunch",
+                "rule": {
+                    "type": "basic",
+                    "values": [
+                        "1"
+                    ]
+                },
+                "run as root": 0,
+                "async": 1,
+                "shell": {
+                    "shellscript file": "RelaunchApp.sh",
+                    "params": [
+                        "{magicmenu actions com.iboysoft-example.relaunchApp.relaunch options com.iboysoft-example.relaunchApp.relaunch.app-name}",
+                        "{magicmenu actions com.iboysoft-example.relaunchApp.relaunch options com.iboysoft-example.relaunchApp.relaunch.app-url}"
+                    ],
+                    "interpreter": "bash"
+                },
+                "options": [
+                    {
+                        "identifier": "com.iboysoft-example.relaunchApp.relaunch.app-name",
+                        "type": "text",
+                        "name": "App Name",
+                        "description": "Enter the app name you want to relaunch",
+                        "required": true
+                    },
+                    {
+                        "identifier": "com.iboysoft-example.relaunchApp.relaunch.app-url",
+                        "type": "pathPicker",
+                        "name": "App URL",
+                        "description": "Select the app url you want to relaunch",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "name": "Relaunch App (Administrator)",
+                "full name": "Relaunch App (Administrator)",
+                "description": "Kill and relaunch your app with administrator privilege",
+                "icon": "icon-root.png",
+                "identifier": "com.iboysoft-example.relaunchApp.relaunch.root",
+                "rule": {
+                    "type": "basic",
+                    "values": [
+                        "1"
+                    ]
+                },
+                "run as root": 1,
+                "async": 1,
+                "shell": {
+                    "shellscript file": "RelaunchApp.sh",
+                    "params": [
+                        "{magicmenu actions com.iboysoft-example.relaunchApp.relaunch.root options com.iboysoft-example.relaunchApp.relaunch.root.app-name}",
+                        "{magicmenu actions com.iboysoft-example.relaunchApp.relaunch.root options com.iboysoft-example.relaunchApp.relaunch.root.app-url}"
+                    ],
+                    "interpreter": "bash"
+                },
+                "options": [
+                    {
+                        "identifier": "com.iboysoft-example.relaunchApp.relaunch.root.app-name",
+                        "type": "text",
+                        "name": "App Name",
+                        "description": "Enter the app name you want to relaunch",
+                        "required": true
+                    },
+                    {
+                        "identifier": "com.iboysoft-example.relaunchApp.relaunch.root.app-url",
+                        "type": "pathPicker",
+                        "name": "App URL",
+                        "description": "Select the app url you want to relaunch",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    }
+}
+
