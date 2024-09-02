@@ -1,7 +1,7 @@
 # MagicMenu-Extensions-Tutorial
 This repository contains some simple demos of MagicMenu extensions. It can help you better learn [MagicMenu Extensions Developer Reference](https://iboysoft.com/extensions/diy-extensions.html "iBoysoft MagicMenu Extensions Developer Reference") and easily create your extensions.    
 
-## How the extension works
+## How The Extension Works
 ```
                                                  ┌────────────────────────┐
   ┌───────────┐          ┌─────────────┐         │ ┌───────────────────┐  │
@@ -23,7 +23,7 @@ This repository contains some simple demos of MagicMenu extensions. It can help 
 ## Repository Layout
 The main folders:
 
-- `App Action Example` - App-based extension demo (Based on calling App functions).
+- `App Action Example` - App-based extension demo (Based on calling app functions).
 - `Bash Action Example` - Shell-based extension demo (Based on calling script functions).  
 - `Template` - Extension templates.  
 
