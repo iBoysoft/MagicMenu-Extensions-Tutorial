@@ -1,0 +1,23 @@
+{
+    "name": "Name here",
+    "subname":"Subname here",
+    "icon": "icon.png",
+    "identifier": "com.iboysoft-example.template",
+    "description": "This is a extension template",
+    "os version": "10.13",
+    "app version": "4",
+    "version": "1",
+    "developer":"YOU",
+    "copyright": "Copyright \u00a9 2024 iBoysoft. All rights reserved.",
+    "categories":[
+        "Shortcut"
+    ],
+    "actions": {
+        "shells": [
+        ],
+        "apps": [
+        ]
+    },
+    "options": [
+    ]
+}
