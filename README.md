@@ -38,5 +38,11 @@ The main folders:
 8. **Zip** the **YOUR-EXTENSION.magicmenux** folder and change the extension from `.zip` to `.magicmenuxz`.
 9. Your zipped extension will run on any Mac with MagicMenu installed.
 
+## Tips
+If you want to display a dialog when using the shell action, you could use `osascript` like: 
+```
+osascript -e 'tell app "System Events" to display dialog "THIS IS A DIALOG!" buttons {"OK"} default button "OK"'
+```
+
 ## Contributing
 When your extension is complete, you could submit it to the [📦 extension repository](https://github.com/iBoysoft/MagicMenu-Extensions "iBoysoft MagicMenu Extension Repository"). Once the extension has been accepted, it can be published to the [official extension store](https://iboysoft.com/extensions/?ref=github "iBoysoft MagicMenu Extension Store").
