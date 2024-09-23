@@ -12,6 +12,11 @@
     "categories":[
         "Shortcut"
     ],
+    "additional groups": [{
+        "identifier": "14675AB1-7B12-4242-8215-BB5D2949B973",
+        "name": "test group",
+        "description": "test group description"
+    }],
     "actions": {
         "apps": [
             {
@@ -26,6 +31,7 @@
                     ]
                 },
                 "run as root": 0,
+                "default group id": "14675AB1-7B12-4242-8215-BB5D2949B973",
                 "async": 0,
                 "app": {
                     "exec file": "AppLauncher.app/Contents/MacOS/AppLauncher",
